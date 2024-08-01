@@ -61,14 +61,14 @@
           </svg>
         </button>
       </div>
-      <div class="mob-menu is-open">
-        <button type="button" class="menu-close-btn">
-          <svg class="icon-close-black" width="8" height="8">
-            <use href="./images/icons.svg#icon-close-black-18dp"></use>
-          </svg>
-        </button>
+      <div class="mob-menu">
         <div>
-          <nav class="header-nav-mob">
+          <button type="button" class="menu-close-btn">
+            <svg class="icon-close-black" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black-18dp"></use>
+            </svg>
+          </button>
+          <nav class="mob-nav-mob">
             <ul class="mob-nav-list">
               <li class="mob-nav-iteam">
                 <a class="mob-nav-link inline" href="./index.html">Studio</a>
@@ -81,51 +81,51 @@
               </li>
             </ul>
           </nav>
-          <address class="contacts">
-            <ul class="contacts-list">
-              <li class="contact-iteam">
-                <a class="contact-link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="contact-iteam">
-                <a class="contact-link" href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
-            </ul>
-          </address>
-          <ul class="mob-icon-list">
-            <li class="mob-icon-item">
-              <a href="" target="_blank" class="mob-icon-linc">
-                <svg class="mob-icon-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
+        </div>
+        <address class="mob-contacts">
+          <ul class="mob-contacts-list">
+            <li class="mob-contact-iteam">
+              <a class="mob-contact-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
             </li>
-            <li class="mob-icon-item">
-              <a href="" target="_blank" class="icon-linc">
-                <svg class="mob-icon-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mob-icon-item">
-              <a href="" target="_blank" class="icon-linc">
-                <svg class="mob-icon-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mob-icon-item">
-              <a href="" target="_blank" class="icon-linc">
-                <svg class="mob-icon-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
+            <li class="mob-contact-iteam">
+              <a class="mob-contact-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
             </li>
           </ul>
-        </div>
+        </address>
+        <ul class="mob-icon-list">
+          <li class="mob-icon-item">
+            <a href="" target="_blank" class="mob-icon-linc">
+              <svg class="mob-icon-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-icon-item">
+            <a href="" target="_blank" class="icon-linc">
+              <svg class="mob-icon-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-icon-item">
+            <a href="" target="_blank" class="icon-linc">
+              <svg class="mob-icon-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-icon-item">
+            <a href="" target="_blank" class="icon-linc">
+              <svg class="mob-icon-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <main class="main">
@@ -207,7 +207,7 @@
                 <p class="tex-third-man">Product Designer</p>
                 <ul class="icon-list">
                   <li class="icon-item">
-                    <a href="" target="_blank" class="iicon-linc">
+                    <a href="" target="_blank" class="icon-linc">
                       <svg class="icon-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
@@ -325,7 +325,7 @@
             </li>
             <li class="team-iteam">
               <img
-                srcset="./images/img3-min.jpg 1x, ./images/img3-min2x.jpg 2x"
+                srcset="./images/img-3-min.jpg 1x, ./images/img3-min2x.jpg 2x"
                 src="./images/img-3-min.jpg"
                 width="264"
                 height="260"
@@ -589,7 +589,7 @@
                   <source
                     srcset="
                       ./images/img9min.jpg         1x,
-                      ./images/img24-des2x-min.jpg 2x
+                      ./images/img23-des2x-min.jpg 2x
                     "
                     media="(min-width: 1200px)"
                   />
@@ -697,7 +697,6 @@
     </footer>
 
     <div class="backdrop">
-      is-open
       <div class="modal">
         <button type="button" class="modal-btn">
           <svg class="icon-close-black" width="8" height="8">
@@ -742,7 +741,6 @@
                 class="modal-input"
                 name="user-email"
                 id="user-email"
-                placeholder="Text input"
               />
               <svg class="modal-icon-input" width="18" height="24">
                 <use href="./images/icons.svg#icon-email-black"></use>
