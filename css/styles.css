@@ -185,13 +185,10 @@ img {
   height: 100%;
   background-color: #fff;
   padding: 24px 24px 40px 16px;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
   overflow: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -223,20 +220,30 @@ img {
   color: #2e2f42;
 }
 
+.inline {
+  color: #404bbf;
+}
+
 .mob-contact-link {
   font-weight: 500;
   font-size: 20px;
+  font-style: normal;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #434455;
-  margin-top: 24px;
 }
 
+.inline {
+  color: #404bbf;
+}
 .mob-icon-item {
   width: 40px;
   height: 40px;
 }
 
+.mob-contact-iteam {
+  margin-bottom: 24px;
+}
 .mob-icon-list {
   display: flex;
   gap: 40px;
@@ -261,7 +268,7 @@ img {
 }
 
 .section-top {
-  /* max-width: 1440px;*/
+  width: 320px;
   margin: 0 auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -288,7 +295,7 @@ img {
   }
 }
 .section-second {
-  padding-top: 120px;
+  padding-top: 96px;
   padding-bottom: 120px;
 }
 
@@ -304,8 +311,8 @@ img {
 }
 
 .part-third {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
   background-color: #f4f4fd;
 }
 
@@ -328,7 +335,6 @@ img {
   background: #4d5ae5;
   display: block;
   margin: auto;
-  margin-top: 75px;
   min-width: 169px;
   height: 56px;
   border-radius: 4px;
@@ -452,8 +458,8 @@ img {
   fill: #f4f4fd;
 }
 .section-fourth {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .bottom {
@@ -536,8 +542,8 @@ img {
 
 .footer {
   background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .footer-container {
@@ -552,10 +558,18 @@ img {
   /* margin-right: 120px;*/
   /*width: 288px;
   height: 112px;*/
-  margin-bottom: 72px;
+  /*margin-bottom: 72px;*/
   text-align: center;
 }
 
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
 .footer-tex {
   font-size: 16px;
   line-height: 1.5;
@@ -564,9 +578,6 @@ img {
   max-width: 264px;
 }
 
-.footer-soc-media {
-  margin-bottom: 72px;
-}
 .soc-media {
   font-weight: 500;
   font-size: 16px;
@@ -685,7 +696,7 @@ img {
   min-height: 584px;
   background: #fcfcfc;
   border-radius: 4px;
-  padding: 72px 24px 24px;
+  padding: 72px 16px 16px;
   transform: translate(-50%, -50%);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -848,6 +859,9 @@ img {
     max-width: 768px;
   }
 
+  .mob-menu {
+    display: none;
+  }
   .menu-open-btn {
     display: none;
     text-align: center;
@@ -879,10 +893,15 @@ img {
   }
 
   .contact-iteam {
-    padding-bottom: 12px;
+    margin-bottom: 12px;
+  }
+  .contact-link {
+    font-weight: 400;
+    font-size: 12px;
   }
   .section-top {
-    padding: 112px 136px;
+    width: 768px;
+    /* padding: 112px 136px;*/
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -924,6 +943,7 @@ img {
 
   .footer-container {
     justify-content: flex-start;
+    padding-left: 108px;
   }
 
   .footer-form {
@@ -979,12 +999,25 @@ img {
     width: calc((100% - 48px) / 3);
   }
 
+  .contact-iteam {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .contact-link {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .contacts-list {
+    margin-top: 0;
+  }
   .contacts-list {
     display: flex;
     gap: 40px;
   }
 
   .section-top {
+    width: 1440px;
     padding: 188px 0;
     margin: 0 auto;
     background-image: linear-gradient(
@@ -1016,6 +1049,14 @@ img {
     line-height: 1.07;
   }
 
+  .section-second {
+    padding-top: 120px;
+  }
+
+  .part-third {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .name-third {
     font-weight: 500;
     font-size: 20px;
@@ -1026,6 +1067,15 @@ img {
     font-weight: 400;
   }
 
+  .section-fourth {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .fourth-container {
+    padding-left: 15px;
+    gap: 0;
+  }
   .footer-logo-wrap {
     margin-right: 120px;
   }
