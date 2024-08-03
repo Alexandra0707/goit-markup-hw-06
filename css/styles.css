@@ -176,12 +176,18 @@ img {
   padding: 0;
 }
 
+.mob-menu.is-open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
 .mob-menu {
   position: fixed;
+
   z-index: 1;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 320px;
   height: 100%;
   background-color: #fff;
   padding: 24px 24px 40px 16px;
@@ -189,16 +195,21 @@ img {
   overflow: auto;
   display: flex;
   flex-direction: column;
-  opacity: 0;
   visibility: hidden;
-  pointer-events: none;
+  opacity: 0;
+  pointer-events: auto;
 }
 .menu-close-btn {
   display: block;
   margin-left: auto;
-  border: none;
-  background: none;
-  /*padding: 0;*/
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  /* border: none;
+  background: none;*/
+  padding: 0;
   border-radius: 100%;
   fill: #e7e9fc;
   stroke-width: 1px;
