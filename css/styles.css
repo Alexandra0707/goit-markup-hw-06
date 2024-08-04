@@ -56,6 +56,12 @@ img {
   margin: 0 auto;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
@@ -177,15 +183,14 @@ img {
 }
 
 .menu-open-btn {
+  display: flex;
   fill: #2f2f37;
   border: none;
   background: none;
   padding: 0;
+  margin-left: auto;
 }
 
-.mob-nav {
-  margin-bottom: auto;
-}
 .mob-menu.is-open {
   visibility: visible;
   opacity: 1;
@@ -230,7 +235,9 @@ img {
 .icon-close-black {
   fill: #2e2f42;
 }
-
+.mob-nav {
+  margin-bottom: auto;
+}
 .mob-nav-iteam {
   margin-bottom: 40px;
 }
